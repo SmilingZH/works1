@@ -1,0 +1,73 @@
+body {
+    transition: background-color 1.5s ease;
+    /* 过渡效果 */
+}
+
+.day {
+    background-color: #ffffff;
+    /* 白天背景颜色 */
+    color: #333333;
+    /* 白天文字颜色 */
+}
+
+.night {
+    background-color: #242424;
+    /* 夜晚背景颜色 */
+    color: #dddddd;
+    /* 夜晚文字颜色 */
+}
+
+/* styles.css */
+.chinese-style-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    /* 背景颜色 */
+    border: none;
+    border-radius: 5px;
+    /* 圆角 */
+    font-size: 16px;
+    color: #333;
+    /* 文字颜色 */
+    cursor: pointer;
+    /* 鼠标指针样式 */
+    outline: none;
+    /* 移除轮廓 */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* 阴影效果 */
+    background-image: linear-gradient(to right, #61d5f2, #f2abf1);
+    /* 渐变背景 */
+    background-size: 200% 200%;
+    animation: gradient-animation 4s ease infinite;
+}
+
+.chinese-style-button:hover {
+    background-position: right center;
+    /* 鼠标悬停时渐变位置 */
+}
+
+.icon-button {
+    padding: 10px;
+    background-color: #f0f0f0;
+    /* 背景颜色 */
+    border: none;
+    border-radius: 5px;
+    /* 圆角 */
+    cursor: pointer;
+    /* 鼠标指针样式 */
+    outline: none;
+    /* 移除轮廓 */
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: left center;
+    }
+
+    50% {
+        background-position: right center;
+    }
+
+    100% {
+        background-position: left center;
+    }
+}

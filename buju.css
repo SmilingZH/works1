@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    height: 100vh;
+    /*vh(view height)浏览器视图高度，此处100是百分比100%*/
+    background-color: #eee
+}
+
+/*运用通用选择器给所有元素加边框，能够直观的看到透明元素的位置*/
+/** {
+            border: 1px solid black;
+        }*/
+.yingyin {
+    box-shadow: rgba(0 0 0 / 20%) 0px 2px 1px -1px,
+        rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgba(0 0 0 / 12%) 0px 1px 3px 0px
+}
+
+.flex {
+    display: flex;
+}
+
+/*白色背景*/
+/*.beijingbaise {
+    background-color: #ffffff;
+}*/
+
+.flex1 {
+    flex: 1;
+
+}
+
+/*右侧盒子，竖向*/
+.column {
+    flex-direction: column;
+}
+
+.mg8 {
+    margin: 8px;
+}
+
+.mgr8 {
+    margin-right: 8px;
+}
+
+.mgt8 {
+    margin-top: 8px;
+}
+
+.img {
+    width: 190px;
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
